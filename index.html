@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <div id="content">Student Portal</div>
+        </div>
+        <input type="text" id="searchBar" placeholder="Search">
+        <button onclick="search()">Search</button>
+        <div class="button-group">
+            <button onclick="sortByNameAsc()">Sort A->Z</button>
+            <button onclick="sortByNameDesc()">Sort Z->A</button>
+            <button onclick="sortByMarks()">Sort by Marks</button>
+            <button onclick="showPassing()">Sort by Passing</button>
+            <button onclick="sortByClass()">Sort by Class</button>
+            <button onclick="sortByGender()">Sort by Gender</button>
+        </div>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
